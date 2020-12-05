@@ -22,7 +22,7 @@ test {
 }
 
 // Apply the jacoco plugin to add support for test coverage
-apply plugin: 'jacoco'
+// apply plugin: 'jacoco'
 
 // create test coverage every time the test task is performed
-test.finalizedBy jacocoTestReport
+// test.finalizedBy jacocoTestReport
