@@ -20,3 +20,9 @@ sourceCompatibility = '1.8'
 test {
     useJUnitPlatform()
 }
+
+// Apply the jacoco plugin to add support for test coverage
+apply plugin: 'jacoco'
+
+// create test coverage every time the test task is performed
+test.finalizedBy jacocoTestReport
